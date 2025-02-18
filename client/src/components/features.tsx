@@ -45,19 +45,24 @@ export default function Features() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
           viewport={{ once: true }}
+          whileHover={{ scale: 1.05 }}
+          className="relative"
         >
-          <Card className="h-full">
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-lg blur-xl animate-glow" />
+          <Card className="h-full bg-black/40 backdrop-blur-lg border-purple-500/20 relative z-10">
             <CardHeader>
-              <div className="mb-4">{feature.icon}</div>
-              <CardTitle>{feature.title}</CardTitle>
-              <CardDescription>{feature.description}</CardDescription>
+              <div className="mb-4 animate-float">{feature.icon}</div>
+              <CardTitle className="gradient-text hero-gradient">{feature.title}</CardTitle>
+              <CardDescription className="text-gray-300">{feature.description}</CardDescription>
             </CardHeader>
             <CardContent>
-              <img 
-                src={feature.image} 
-                alt={feature.title}
-                className="rounded-lg w-full h-48 object-cover"
-              />
+              {feature.image && (
+                <img 
+                  src={feature.image} 
+                  alt={feature.title}
+                  className="rounded-lg w-full h-48 object-cover transition-all duration-300 hover:scale-105"
+                />
+              )}
             </CardContent>
           </Card>
         </motion.div>
