@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 
 export default function Music() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 to-slate-900 text-white flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-purple-950 to-indigo-900 text-white flex flex-col">
       <Nav />
 
       <div className="container mx-auto px-4 pt-24 flex-grow">
@@ -17,27 +17,27 @@ export default function Music() {
         >
           {/* Hero Section */}
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               Music Like Never Before
             </h1>
-            <p className="text-xl text-blue-200 mb-8">
+            <p className="text-xl text-purple-200 mb-8">
               Now available with slash commands and a visually immersive experience in all your servers.
             </p>
 
             {/* Mock Phone Display - Styled after Rythm */}
-            <div className="relative max-w-xs mx-auto mb-12 bg-blue-900/30 backdrop-blur-lg p-6 rounded-3xl border border-blue-700/50">
+            <div className="relative max-w-xs mx-auto mb-12 bg-purple-900/30 backdrop-blur-lg p-6 rounded-3xl border border-purple-700/50">
               <div className="space-y-4">
                 <div className="flex items-center gap-3 mb-4">
-                  <Music2 className="h-6 w-6 text-blue-400" />
+                  <Music2 className="h-6 w-6 text-purple-400" />
                   <div className="flex-1">
-                    <div className="h-2 bg-blue-400/30 rounded animate-pulse"></div>
+                    <div className="h-2 bg-purple-400/30 rounded animate-pulse"></div>
                   </div>
                 </div>
-                <div className="h-2 w-2/3 bg-blue-400/20 rounded"></div>
-                <div className="h-2 w-1/2 bg-blue-400/20 rounded"></div>
+                <div className="h-2 w-2/3 bg-purple-400/20 rounded"></div>
+                <div className="h-2 w-1/2 bg-purple-400/20 rounded"></div>
                 {/* Progress Bar */}
-                <div className="w-full h-1 bg-blue-900 rounded-full overflow-hidden">
-                  <div className="w-1/3 h-full bg-blue-400 rounded-full"></div>
+                <div className="w-full h-1 bg-purple-900 rounded-full overflow-hidden">
+                  <div className="w-1/3 h-full bg-purple-400 rounded-full"></div>
                 </div>
               </div>
             </div>
@@ -45,14 +45,14 @@ export default function Music() {
             <div className="flex flex-wrap gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
               >
                 <Globe className="mr-2 h-5 w-5" /> Add EduSphere
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className="border-blue-500 text-blue-200 hover:bg-blue-900/50"
+                className="border-purple-500 text-purple-200 hover:bg-purple-900/50"
               >
                 <Users className="mr-2 h-5 w-5" /> Join Community
               </Button>
@@ -65,22 +65,22 @@ export default function Music() {
             whileInView={{ opacity: 1, y: 0 }}
             className="mb-16 text-center"
           >
-            <h2 className="text-3xl font-bold mb-6 text-blue-400">Taking Music to the Next Level</h2>
-            <p className="text-blue-200 mb-8">
+            <h2 className="text-3xl font-bold mb-6 text-purple-400">Taking Music to the Next Level</h2>
+            <p className="text-purple-200 mb-8">
               EduSphere is evolving to bring you a seamless mobile experience, 
               allowing you to enjoy your favorite tracks anytime, anywhere.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center mb-8">
-              <Button variant="outline" className="border-blue-500 text-blue-200">
+              <Button variant="outline" className="border-purple-500 text-purple-200">
                 <Bell className="mr-2 h-5 w-5" /> Join Waitlist
               </Button>
-              <Button variant="outline" className="border-blue-500 text-blue-200">
+              <Button variant="outline" className="border-purple-500 text-purple-200">
                 <Mail className="mr-2 h-5 w-5" /> Stay Updated
               </Button>
             </div>
 
-            <p className="text-blue-300 text-sm">🚀 Coming soon to iOS & Android!</p>
+            <p className="text-purple-300 text-sm">🚀 Coming soon to iOS & Android!</p>
           </motion.div>
 
           {/* Features Grid */}
@@ -89,40 +89,40 @@ export default function Music() {
             whileInView={{ opacity: 1, y: 0 }}
             className="mb-16"
           >
-            <h2 className="text-3xl font-bold mb-8 text-center text-blue-400">
+            <h2 className="text-3xl font-bold mb-8 text-center text-purple-400">
               More Than Just a Music Bot
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-blue-900/40 backdrop-blur-lg p-6 rounded-lg border border-blue-700/50">
+              <div className="bg-purple-900/40 backdrop-blur-lg p-6 rounded-lg border border-purple-700/50">
                 <div className="flex items-center gap-3 mb-4">
-                  <Headphones className="h-6 w-6 text-blue-400" />
-                  <h3 className="text-xl font-semibold text-blue-200">Live Listening</h3>
+                  <Headphones className="h-6 w-6 text-purple-400" />
+                  <h3 className="text-xl font-semibold text-purple-200">Live Listening</h3>
                 </div>
-                <p className="text-blue-300">Play songs in perfect sync with your friends.</p>
+                <p className="text-purple-300">Play songs in perfect sync with your friends.</p>
               </div>
 
-              <div className="bg-blue-900/40 backdrop-blur-lg p-6 rounded-lg border border-blue-700/50">
+              <div className="bg-purple-900/40 backdrop-blur-lg p-6 rounded-lg border border-purple-700/50">
                 <div className="flex items-center gap-3 mb-4">
-                  <Library className="h-6 w-6 text-blue-400" />
-                  <h3 className="text-xl font-semibold text-blue-200">Shared Playlists</h3>
+                  <Library className="h-6 w-6 text-purple-400" />
+                  <h3 className="text-xl font-semibold text-purple-200">Shared Playlists</h3>
                 </div>
-                <p className="text-blue-300">Let everyone contribute to the queue.</p>
+                <p className="text-purple-300">Let everyone contribute to the queue.</p>
               </div>
 
-              <div className="bg-blue-900/40 backdrop-blur-lg p-6 rounded-lg border border-blue-700/50">
+              <div className="bg-purple-900/40 backdrop-blur-lg p-6 rounded-lg border border-purple-700/50">
                 <div className="flex items-center gap-3 mb-4">
-                  <PlayCircle className="h-6 w-6 text-blue-400" />
-                  <h3 className="text-xl font-semibold text-blue-200">Discover New Music</h3>
+                  <PlayCircle className="h-6 w-6 text-purple-400" />
+                  <h3 className="text-xl font-semibold text-purple-200">Discover New Music</h3>
                 </div>
-                <p className="text-blue-300">Share and explore trending tracks.</p>
+                <p className="text-purple-300">Share and explore trending tracks.</p>
               </div>
 
-              <div className="bg-blue-900/40 backdrop-blur-lg p-6 rounded-lg border border-blue-700/50">
+              <div className="bg-purple-900/40 backdrop-blur-lg p-6 rounded-lg border border-purple-700/50">
                 <div className="flex items-center gap-3 mb-4">
-                  <Radio className="h-6 w-6 text-blue-400" />
-                  <h3 className="text-xl font-semibold text-blue-200">Custom Radio</h3>
+                  <Radio className="h-6 w-6 text-purple-400" />
+                  <h3 className="text-xl font-semibold text-purple-200">Custom Radio</h3>
                 </div>
-                <p className="text-blue-300">Tune in to handpicked playlists updated regularly.</p>
+                <p className="text-purple-300">Tune in to handpicked playlists updated regularly.</p>
               </div>
             </div>
           </motion.div>
@@ -131,17 +131,17 @@ export default function Music() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-center py-16 bg-blue-900/40 backdrop-blur-lg rounded-lg border border-blue-700/50"
+            className="text-center py-16 bg-purple-900/40 backdrop-blur-lg rounded-lg border border-purple-700/50"
           >
-            <h2 className="text-3xl font-bold mb-6 text-blue-400">
+            <h2 className="text-3xl font-bold mb-6 text-purple-400">
               Be Part of the EduSphere Experience
             </h2>
-            <p className="text-blue-200 mb-8">
+            <p className="text-purple-200 mb-8">
               Stay connected, get the latest updates, and interact with our growing community of music lovers.
             </p>
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
             >
               <Users className="mr-2 h-5 w-5" /> Join Our Discord
             </Button>

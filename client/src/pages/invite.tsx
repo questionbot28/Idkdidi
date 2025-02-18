@@ -48,7 +48,7 @@ const commands = [
 
 export default function InviteTracker() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-950 to-slate-900 text-white flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-orange-950 to-amber-900 text-white flex flex-col">
       <Nav />
 
       <div className="container mx-auto px-4 pt-24 flex-grow">

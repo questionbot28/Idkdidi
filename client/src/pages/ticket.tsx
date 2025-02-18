@@ -57,7 +57,7 @@ const steps = [
 
 export default function TicketSystem() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-950 to-slate-900 text-white flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-emerald-950 to-teal-900 text-white flex flex-col">
       <Nav />
 
       <div className="container mx-auto px-4 pt-24 flex-grow">

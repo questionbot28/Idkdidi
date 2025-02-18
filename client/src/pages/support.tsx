@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 
 export default function Support() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-950 to-slate-900 text-white flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-cyan-950 to-blue-900 text-white flex flex-col">
       <Nav />
 
       <div className="container mx-auto px-4 pt-24 flex-grow">

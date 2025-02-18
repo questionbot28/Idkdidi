@@ -12,7 +12,7 @@ export default function Home() {
       <Nav />
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 overflow-hidden">
+      <section className="relative pt-20 pb-32 overflow-hidden bg-gradient-to-b from-violet-950 to-purple-900"> {/* Changed background color */}
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <motion.div 
@@ -20,7 +20,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               className="flex-1 text-center lg:text-left"
             >
-              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent mb-6">
+              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-violet-500 to-violet-700 bg-clip-text text-transparent mb-6"> {/* Changed primary color */}
                 EduSphere Bot
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
@@ -29,7 +29,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <motion.a 
                   href="https://discord.com/api/oauth2/authorize" 
-                  className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2"
+                  className="bg-violet-500 hover:bg-violet-600 text-white px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2" {/* Changed primary color */}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -38,7 +38,7 @@ export default function Home() {
                 </motion.a>
                 <motion.a 
                   href="https://discord.gg/edusphere"
-                  className="border border-primary/20 hover:bg-primary/5 px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2"
+                  className="border border-violet-500/20 hover:bg-violet-500/5 px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2" {/* Changed primary color */}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -59,9 +59,9 @@ export default function Home() {
                   alt="Discord Bot Interface"
                   className="rounded-lg shadow-2xl"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-primary/10 backdrop-blur-lg rounded-lg p-4">
+                <div className="absolute -bottom-6 -right-6 bg-violet-500/10 backdrop-blur-lg rounded-lg p-4"> {/* Changed primary color */}
                   <div className="flex items-center gap-3">
-                    <Bot className="h-8 w-8 text-primary" />
+                    <Bot className="h-8 w-8 text-violet-500" /> {/* Changed primary color */}
                     <div>
                       <p className="font-medium">Online 24/7</p>
                       <p className="text-sm text-muted-foreground">Ready to assist</p>
@@ -75,7 +75,7 @@ export default function Home() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-slate-100"> {/* Changed background color */}
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Everything You Need</h2>
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Commands Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-violet-950 to-purple-900"> {/* Changed background color */}
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Available Commands</h2>
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-violet-950 to-purple-900"> {/* Changed background color */}
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-lg text-muted-foreground mb-8">
@@ -122,7 +122,7 @@ export default function Home() {
           </p>
           <motion.a 
             href="https://discord.com/api/oauth2/authorize"
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2"
+            className="bg-violet-500 hover:bg-violet-600 text-white px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2" {/* Changed primary color */}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
