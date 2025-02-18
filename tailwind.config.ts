@@ -76,8 +76,22 @@ export default {
           '50%': { transform: 'translateY(-10px)' },
         },
         glow: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.6' },
+          '0%, 100%': { 
+            opacity: '1',
+            textShadow: '0 0 12px currentColor'
+          },
+          '50%': { 
+            opacity: '0.8',
+            textShadow: '0 0 20px currentColor'
+          },
+        },
+        pulse: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '100% 0' },
+          '100%': { backgroundPosition: '-100% 0' },
         },
       },
       animation: {
