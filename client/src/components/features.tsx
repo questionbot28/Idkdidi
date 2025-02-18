@@ -37,7 +37,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
       {features.map((feature, index) => (
         <motion.div
           key={index}
