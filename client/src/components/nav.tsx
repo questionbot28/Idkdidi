@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,24 +14,29 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const [location] = useLocation();
 
-  const getPageTheme = () => {
-    switch (location) {
-      case '/about':
-        return 'from-blue-500 to-cyan-500';
-      case '/support':
-        return 'from-green-500 to-emerald-500';
-      case '/music':
-        return 'from-purple-500 to-pink-500';
-      case '/ticket':
-        return 'from-orange-500 to-red-500';
-      case '/invite':
-        return 'from-indigo-500 to-violet-500';
-      case '/generator':
-        return 'from-yellow-500 to-amber-500';
-      default:
-        return 'from-violet-400 to-indigo-400';
-    }
-  };
+  const [currentColorIndex, setCurrentColorIndex] = useState(0);
+
+const colorThemes = [
+  'from-blue-500 to-cyan-500',
+  'from-green-500 to-emerald-500',
+  'from-purple-500 to-pink-500',
+  'from-orange-500 to-red-500',
+  'from-indigo-500 to-violet-500',
+  'from-yellow-500 to-amber-500',
+  'from-violet-400 to-indigo-400'
+];
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentColorIndex((prevIndex) => 
+      prevIndex === colorThemes.length - 1 ? 0 : prevIndex + 1
+    );
+  }, 1000);
+
+  return () => clearInterval(interval);
+}, []);
+
+const getPageTheme = () => colorThemes[currentColorIndex];
 
   const pages = [
     { name: "About", path: "/about" },
@@ -43,7 +48,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className={`fixed w-full bg-background/80 backdrop-blur-lg z-50 border-b bg-gradient-to-r ${getPageTheme()}`}>
+    <nav className={`fixed w-full bg-background/80 backdrop-blur-lg z-50 border-b bg-gradient-to-r transition-all duration-500 ease-in-out ${getPageTheme()}`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo, Home and Dropdown */}
