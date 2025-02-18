@@ -27,21 +27,27 @@ export default function Home() {
                 The all-in-one Discord bot for education, music, and community management
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                <a 
-                  href="#" 
-                  className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium"
+                <motion.a 
+                  href="https://discord.com/api/oauth2/authorize" 
+                  className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
+                  <Bot className="h-5 w-5" />
                   Add to Discord
-                </a>
-                <a 
-                  href="#"
-                  className="border border-primary/20 hover:bg-primary/5 px-8 py-3 rounded-lg font-medium"
+                </motion.a>
+                <motion.a 
+                  href="https://discord.gg/edusphere"
+                  className="border border-primary/20 hover:bg-primary/5 px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
+                  <Users className="h-5 w-5" />
                   Join Support Server
-                </a>
+                </motion.a>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -85,9 +91,9 @@ export default function Home() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Easy to Use Commands</h2>
+            <h2 className="text-3xl font-bold mb-4">Available Commands</h2>
             <p className="text-lg text-muted-foreground">
-              Get started with these simple commands
+              Discover what EduSphere can do
             </p>
           </div>
           <Commands />
@@ -114,13 +120,15 @@ export default function Home() {
           <p className="text-lg text-muted-foreground mb-8">
             Join thousands of servers already using EduSphere
           </p>
-          <a 
-            href="#" 
+          <motion.a 
+            href="https://discord.com/api/oauth2/authorize"
             className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium inline-flex items-center gap-2"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            <Sparkles className="h-5 w-5" />
+            <Bot className="h-5 w-5" />
             Add EduSphere to Discord
-          </a>
+          </motion.a>
         </div>
       </section>
 

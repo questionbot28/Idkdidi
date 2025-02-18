@@ -55,9 +55,6 @@ export default function Nav() {
             <a href="#features" className="text-muted-foreground hover:text-foreground">Features</a>
             <a href="#commands" className="text-muted-foreground hover:text-foreground">Commands</a>
             <a href="#faq" className="text-muted-foreground hover:text-foreground">FAQ</a>
-            <Button asChild variant="default">
-              <a href="#">Add to Discord</a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,9 +84,6 @@ export default function Nav() {
               <a href="#features" className="text-muted-foreground hover:text-foreground">Features</a>
               <a href="#commands" className="text-muted-foreground hover:text-foreground">Commands</a>
               <a href="#faq" className="text-muted-foreground hover:text-foreground">FAQ</a>
-              <Button asChild className="w-full">
-                <a href="#">Add to Discord</a>
-              </Button>
             </div>
           </div>
         )}
