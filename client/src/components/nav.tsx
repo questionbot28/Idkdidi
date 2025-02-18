@@ -64,36 +64,7 @@ export default function Nav() {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden text-white hover:text-white/80"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X /> : <Menu />}
-          </Button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden py-4 border-t border-white/20">
-            <div className="flex flex-col gap-4">
-              {pages.map((page) => (
-                <Link
-                  key={page.path}
-                  href={page.path}
-                  className="text-white hover:text-white/80"
-                >
-                  {page.name}
-                </Link>
-              ))}
-              <a href="#features" className="text-white hover:text-white/80">Features</a>
-              <a href="#commands" className="text-white hover:text-white/80">Commands</a>
-              <a href="#faq" className="text-white hover:text-white/80">FAQ</a>
-            </div>
           </div>
-        )}
       </div>
     </nav>
   );
