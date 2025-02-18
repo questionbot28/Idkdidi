@@ -2,13 +2,14 @@ import Nav from "@/components/nav";
 import { motion } from "framer-motion";
 import { LifeBuoy, Music2, BookOpen, Ticket, Sparkles, Bot, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Footer from "@/components/footer";
 
 export default function Support() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-purple-950 to-slate-900 text-white flex flex-col">
       <Nav />
 
-      <div className="container mx-auto px-4 pt-24">
+      <div className="container mx-auto px-4 pt-24 flex-grow">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -139,6 +140,8 @@ export default function Support() {
           </motion.div>
         </motion.div>
       </div>
+
+      <Footer />
     </div>
   );
 }

@@ -4,12 +4,13 @@ import Nav from "@/components/nav";
 import Features from "@/components/features";
 import Commands from "@/components/commands";
 import FAQ from "@/components/faq";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Nav />
-      
+
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 overflow-hidden">
         <div className="container mx-auto px-4">
@@ -122,6 +123,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

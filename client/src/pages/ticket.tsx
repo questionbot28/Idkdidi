@@ -1,13 +1,14 @@
 import Nav from "@/components/nav";
 import { motion } from "framer-motion";
 import { Ticket, MessageSquare, Clock, CheckCircle } from "lucide-react";
+import Footer from "@/components/footer";
 
 export default function TicketSystem() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-emerald-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-emerald-950 to-slate-900 text-white flex flex-col">
       <Nav />
-      
-      <div className="container mx-auto px-4 pt-24">
+
+      <div className="container mx-auto px-4 pt-24 flex-grow">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -16,12 +17,12 @@ export default function TicketSystem() {
           <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-400 to-green-400 bg-clip-text text-transparent">
             Ticket System
           </h1>
-          
+
           <div className="space-y-8">
             <p className="text-xl text-emerald-200">
               Streamline your server's support process with our advanced ticket management system.
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-emerald-900/40 p-6 rounded-lg border border-emerald-700/50 hover:border-emerald-500/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
@@ -30,7 +31,7 @@ export default function TicketSystem() {
                 </div>
                 <p className="text-emerald-300">Create and manage support tickets with ease.</p>
               </div>
-              
+
               <div className="bg-emerald-900/40 p-6 rounded-lg border border-emerald-700/50 hover:border-emerald-500/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="h-6 w-6 text-emerald-400" />
@@ -39,7 +40,7 @@ export default function TicketSystem() {
                 <p className="text-emerald-300">Track and manage response times effectively.</p>
               </div>
             </div>
-            
+
             <div className="bg-emerald-900/40 p-8 rounded-lg border border-emerald-700/50">
               <h2 className="text-2xl font-semibold mb-6 text-emerald-200">Ticket Commands</h2>
               <div className="space-y-4">
@@ -60,6 +61,8 @@ export default function TicketSystem() {
           </div>
         </motion.div>
       </div>
+
+      <Footer />
     </div>
   );
 }

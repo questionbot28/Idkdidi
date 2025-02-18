@@ -1,13 +1,14 @@
 import Nav from "@/components/nav";
 import { motion } from "framer-motion";
 import { Brain, BookOpen, GraduationCap, Star } from "lucide-react";
+import Footer from "@/components/footer";
 
 export default function QuestionGenerator() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-red-950 to-slate-900 text-white flex flex-col">
       <Nav />
-      
-      <div className="container mx-auto px-4 pt-24">
+
+      <div className="container mx-auto px-4 pt-24 flex-grow">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -16,12 +17,12 @@ export default function QuestionGenerator() {
           <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">
             Question Generator
           </h1>
-          
+
           <div className="space-y-8">
             <p className="text-xl text-red-200">
               Generate practice questions and quizzes for various subjects and topics.
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-red-900/40 p-6 rounded-lg border border-red-700/50 hover:border-red-500/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
@@ -30,7 +31,7 @@ export default function QuestionGenerator() {
                 </div>
                 <p className="text-red-300">Generate questions for Math, Science, History, and more.</p>
               </div>
-              
+
               <div className="bg-red-900/40 p-6 rounded-lg border border-red-700/50 hover:border-red-500/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
                   <Star className="h-6 w-6 text-red-400" />
@@ -39,7 +40,7 @@ export default function QuestionGenerator() {
                 <p className="text-red-300">Choose from various difficulty levels for optimal learning.</p>
               </div>
             </div>
-            
+
             <div className="bg-red-900/40 p-8 rounded-lg border border-red-700/50">
               <h2 className="text-2xl font-semibold mb-6 text-red-200">Generator Commands</h2>
               <div className="space-y-4">
@@ -60,6 +61,8 @@ export default function QuestionGenerator() {
           </div>
         </motion.div>
       </div>
+
+      <Footer />
     </div>
   );
 }

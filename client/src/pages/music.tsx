@@ -2,13 +2,14 @@ import Nav from "@/components/nav";
 import { motion } from "framer-motion";
 import { Music2, PlayCircle, Radio, Library, Bell, Mail, Headphones, Users, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Footer from "@/components/footer";
 
 export default function Music() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-950 to-slate-900 text-white flex flex-col">
       <Nav />
 
-      <div className="container mx-auto px-4 pt-24">
+      <div className="container mx-auto px-4 pt-24 flex-grow">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,8 +24,8 @@ export default function Music() {
               Now available with slash commands and a visually immersive experience in all your servers.
             </p>
 
-            {/* Mock Phone Display */}
-            <div className="relative max-w-xs mx-auto mb-12 bg-blue-900/30 p-6 rounded-3xl border border-blue-700/50">
+            {/* Mock Phone Display - Styled after Rythm */}
+            <div className="relative max-w-xs mx-auto mb-12 bg-blue-900/30 backdrop-blur-lg p-6 rounded-3xl border border-blue-700/50">
               <div className="space-y-4">
                 <div className="flex items-center gap-3 mb-4">
                   <Music2 className="h-6 w-6 text-blue-400" />
@@ -34,6 +35,10 @@ export default function Music() {
                 </div>
                 <div className="h-2 w-2/3 bg-blue-400/20 rounded"></div>
                 <div className="h-2 w-1/2 bg-blue-400/20 rounded"></div>
+                {/* Progress Bar */}
+                <div className="w-full h-1 bg-blue-900 rounded-full overflow-hidden">
+                  <div className="w-1/3 h-full bg-blue-400 rounded-full"></div>
+                </div>
               </div>
             </div>
 
@@ -88,7 +93,7 @@ export default function Music() {
               More Than Just a Music Bot
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-blue-900/40 p-6 rounded-lg border border-blue-700/50">
+              <div className="bg-blue-900/40 backdrop-blur-lg p-6 rounded-lg border border-blue-700/50">
                 <div className="flex items-center gap-3 mb-4">
                   <Headphones className="h-6 w-6 text-blue-400" />
                   <h3 className="text-xl font-semibold text-blue-200">Live Listening</h3>
@@ -96,7 +101,7 @@ export default function Music() {
                 <p className="text-blue-300">Play songs in perfect sync with your friends.</p>
               </div>
 
-              <div className="bg-blue-900/40 p-6 rounded-lg border border-blue-700/50">
+              <div className="bg-blue-900/40 backdrop-blur-lg p-6 rounded-lg border border-blue-700/50">
                 <div className="flex items-center gap-3 mb-4">
                   <Library className="h-6 w-6 text-blue-400" />
                   <h3 className="text-xl font-semibold text-blue-200">Shared Playlists</h3>
@@ -104,7 +109,7 @@ export default function Music() {
                 <p className="text-blue-300">Let everyone contribute to the queue.</p>
               </div>
 
-              <div className="bg-blue-900/40 p-6 rounded-lg border border-blue-700/50">
+              <div className="bg-blue-900/40 backdrop-blur-lg p-6 rounded-lg border border-blue-700/50">
                 <div className="flex items-center gap-3 mb-4">
                   <PlayCircle className="h-6 w-6 text-blue-400" />
                   <h3 className="text-xl font-semibold text-blue-200">Discover New Music</h3>
@@ -112,7 +117,7 @@ export default function Music() {
                 <p className="text-blue-300">Share and explore trending tracks.</p>
               </div>
 
-              <div className="bg-blue-900/40 p-6 rounded-lg border border-blue-700/50">
+              <div className="bg-blue-900/40 backdrop-blur-lg p-6 rounded-lg border border-blue-700/50">
                 <div className="flex items-center gap-3 mb-4">
                   <Radio className="h-6 w-6 text-blue-400" />
                   <h3 className="text-xl font-semibold text-blue-200">Custom Radio</h3>
@@ -126,7 +131,7 @@ export default function Music() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-center py-16 bg-blue-900/40 rounded-lg border border-blue-700/50"
+            className="text-center py-16 bg-blue-900/40 backdrop-blur-lg rounded-lg border border-blue-700/50"
           >
             <h2 className="text-3xl font-bold mb-6 text-blue-400">
               Be Part of the EduSphere Experience
@@ -143,6 +148,8 @@ export default function Music() {
           </motion.div>
         </motion.div>
       </div>
+
+      <Footer />
     </div>
   );
 }

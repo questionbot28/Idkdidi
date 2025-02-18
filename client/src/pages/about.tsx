@@ -2,10 +2,11 @@ import Nav from "@/components/nav";
 import { motion } from "framer-motion";
 import { Bot, Star, Sparkles, Users, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Footer from "@/components/footer";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-white flex flex-col">
       <Nav />
 
       <div className="container mx-auto px-4 pt-24">
@@ -143,6 +144,7 @@ export default function About() {
           </motion.div>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 }
