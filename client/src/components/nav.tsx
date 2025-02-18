@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -25,8 +25,13 @@ export default function Nav() {
     <nav className="fixed w-full bg-background/80 backdrop-blur-lg z-50 border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo and Dropdown */}
+          {/* Logo, Home and Dropdown */}
           <div className="flex items-center gap-4">
+            <Link href="/">
+              <Button variant="ghost" size="icon" className="mr-2">
+                <Home className="h-5 w-5" />
+              </Button>
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" className="font-bold text-xl flex items-center gap-2">
