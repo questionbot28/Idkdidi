@@ -3,15 +3,60 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --primary-dark: #2D004B;
+    --electric-blue: #00B8FF;
+    --lime-green: #A1D400;
+    --light-grey: #F4F4F4;
+    --charcoal-black: #1A1A1A;
+    --soft-lavender: #E6A1FF;
+  }
+
   * {
     @apply border-border;
   }
 
   body {
     @apply font-sans antialiased;
-    background: linear-gradient(135deg, #13151a 0%, #1e2028 100%);
+    background: var(--charcoal-black);
     background-attachment: fixed;
-    color: #ffffff;
+    color: var(--light-grey);
+  }
+
+  .btn-primary {
+    @apply bg-[#00B8FF] hover:bg-[#A1D400] text-white transition-colors duration-300;
+  }
+
+  /* Music Page */
+  .music-theme {
+    background: var(--charcoal-black);
+  }
+
+  /* Support Page */
+  .support-theme {
+    background: var(--light-grey);
+    color: var(--charcoal-black);
+  }
+
+  /* Ticket Page */
+  .ticket-theme {
+    background: var(--charcoal-black);
+  }
+
+  /* Education Page */
+  .education-theme {
+    background: var(--light-grey);
+    color: var(--charcoal-black);
+  }
+
+  /* Invite Page */
+  .invite-theme {
+    background: var(--primary-dark);
+  }
+
+  /* Home Page */
+  .home-theme {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--electric-blue) 100%);
   }
 
   /* Music Page Theme */
